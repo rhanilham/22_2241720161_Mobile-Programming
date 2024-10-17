@@ -1,6 +1,5 @@
 ## Praktikum 5: Membangun Navigasi di Flutter
 **Langkah 1: Siapkan project baru**
-![alt text](images/01.png)
 
 **Langkah 2: Mendefinisikan Route**
 
@@ -13,5 +12,5 @@
 **Langkah 6: Membuat ListView dan itemBuilder**
 
 **Langkah 7: Menambahkan aksi pada ListView**
-
+![alt text](images/01.png)
 ## Tugas Praktikum 2
