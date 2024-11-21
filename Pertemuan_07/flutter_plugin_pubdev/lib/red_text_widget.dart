@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class RedTextWidget extends StatelessWidget {
   final String text;
 
-  const RedTextWidget({Key? key, required this.text}) : super(key: key);
+  const RedTextWidget({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {

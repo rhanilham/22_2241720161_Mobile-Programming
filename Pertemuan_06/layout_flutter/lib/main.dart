@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Langkah 4: Implementasi title row
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
     );
 
     // Langkah 1: Method _buildButtonColumn
-    Column _buildButtonColumn(Color color, IconData icon, String label) {
+    Column buildButtonColumn(Color color, IconData icon, String label) {
       return Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -69,9 +71,9 @@ class MyApp extends StatelessWidget {
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        _buildButtonColumn(color, Icons.call, 'CALL'),
-        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
-        _buildButtonColumn(color, Icons.share, 'SHARE'),
+        buildButtonColumn(color, Icons.call, 'CALL'),
+        buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        buildButtonColumn(color, Icons.share, 'SHARE'),
       ],
     );
 

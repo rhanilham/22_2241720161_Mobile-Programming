@@ -8,11 +8,13 @@ class HomePage extends StatelessWidget {
     Item(name: 'Item 3', price: 30000),
   ];
 
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: const Text('Home Page'),
       ),
       body: ListView.builder(
         itemCount: items.length,
@@ -23,7 +25,7 @@ class HomePage extends StatelessWidget {
               Navigator.pushNamed(context, '/item', arguments: item);
             },
             child: Card(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: ListTile(
                 title: Text(item.name),
                 subtitle: Text('Price: ${item.price.toStringAsFixed(0)}'),
