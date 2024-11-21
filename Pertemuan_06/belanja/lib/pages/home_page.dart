@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     Item(name: 'Item 3', price: 30000),
   ];
 
-  const HomePage({super.key});
+  HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
